@@ -1,6 +1,6 @@
 package org.example;
 
-public class Car {
+public class Car extends Object{
     private int currentSpeed;
 
     public Car(){
@@ -10,6 +10,10 @@ public class Car {
 
     public int getCurrentSpeed() {
         return currentSpeed;
+    }
+
+    public int setCurrentSpeed(int currentSpeed) {
+        return this.currentSpeed = currentSpeed;
     }
 
 

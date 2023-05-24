@@ -20,6 +20,9 @@ public class Main {
     // todo:  ссылка и объект
 
     public static void main(String[] args) {
+
+        System.out.println(new String("80 символов 80 символов 80 символов 80 символов 80 символов 80 символов 80 символов 80 символов 80 символов 80 символов 80 символов 80 символов 80 символов 80 символов ")
+                .substring(0,80));
         Truck truck = new Truck();
         truck.printSpeed();
 

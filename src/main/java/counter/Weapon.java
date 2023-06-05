@@ -1,18 +1,20 @@
 package counter;
 
-public class Weapon{
-    private int Fire;
+public class Weapon {
+    private int fire;
 
 
     public Weapon() {
-        System.out.println("Создали Weapon");
-        Fire = (int) (Math.random() * 180);
-    }
-    public int getFire() {
-        return Fire;
+        System.out.println("Выдали Weapon");
+        fire = (int) (Math.random() * 180);
+        System.out.println("Урон " + fire);
     }
 
-    public int setFire (int Fire) {
-        return this.Fire = Fire;
+    public int getFire() {
+        return fire;
+    }
+
+    public int setFire(int fire) {
+        return this.fire = fire;
     }
 }

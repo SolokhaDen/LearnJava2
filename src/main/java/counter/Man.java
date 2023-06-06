@@ -6,6 +6,8 @@ public class Man {
     private String name;
     private Weapon ak47 = new Weapon();
 
+
+
     public void setAlive(boolean alive) {
         isAlive = alive;
     }
@@ -15,13 +17,15 @@ public class Man {
     }
 
     public Man() {
-        setName("Denis" + (int) (Math.random() * 180));
+        setName("Player" + (int) (Math.random() * 180));
         System.out.println("Создали " + name);
+        System.out.println("Подобрал оружие ");
     }
 
     public void попадание(Man он) {
         int урон = ak47.getFire();
         он.hp = он.hp - урон;
+        System.out.println("Выстрел");
         System.out.println("Урон -" + урон);
         if (он.hp < 1) {
             он.setAlive(false);
